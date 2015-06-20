@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+}
+
+.heading {
+  border-bottom: 5px solid black;
+  height: 50px;
+}
+
+h4 {
+  font-size: 1.6em;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.six {
+  border: 5px solid black;
+  height: 600px;
+}
+
+.five {
+  border: 5px solid black;
+  display: inline-block;
+  height: 275px;
+  float: right;
+}
+
+.submitOrCancel {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 400px;
+}
+
+#submit, #cancel, #reset {
+  background-color: lightgreen;
+  width: 120px;
+  text-align: center;
+  border: 2px solid gray;
+  display: inline-block;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.earnings {
+  margin-top: 50px;
+}
+
+.one {
+  float: right;
+  margin-top: 40px;
+}
