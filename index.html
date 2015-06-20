@@ -45,45 +45,22 @@
           <h4>Enter the Meal Details</h4>
         </div>
 
-        <div class="row">
-          <form>
-            <div class="one-half column">
-              <label for"meal_price">Base Meal Price: $</label>
-            </div>
+        <div id="form">
+          <form action="" class="meal_details">
+            <fieldset>
 
-            <div class="one-half column">
-              <input type="text" id="mealPrice">
-            </div>
+                <label for="meal_price">Base Meal Price: $</label>
+                <input name="meal_price" />
 
-            <div class="one-half column">
-              <label for"tax_rate">Tax Rate: %</label>
-            </div>
+                <label for="tax_rate">Tax Rate: %</label>
+                <input name="tax_rate" />
 
-            <div class="one-half column">
-              <input type="text" id="taxRate">
-            </div>
+                <label for="tip_percentage">Tip Percentage: %</label>
+                <input name="tip_percentage" />
 
-            <div class="one-half column">
-              <label for"tip_percentage">Tip Percentage: %</label>
-            </div>
-
-            <div class="one-half column">
-              <input type="text" id="tipPercentage">
-            </div>
-
+            </fieldset>
           </form>
-
         </div>
-<!--             <div class="form-group">
-              <label for"tax_rate">Tax Rate: %</label>
-              <input type="text" id="taxRate">
-            </div>
-            <div class="form-group">
-              <label for"tip_percentage">Tip Percentage: %</label>
-              <input type="text" id="tipPercentage">
-            </div>
-          </form>
-        </div> -->
 
         <div class="submitOrCancel">
           <button id="submit">
