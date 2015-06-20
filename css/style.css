@@ -18,17 +18,32 @@ h4 {
   height: 600px;
 }
 
-.five {
-  border: 5px solid black;
-  display: inline-block;
-  height: 275px;
+#form {
+    background-color: #FFF;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 30px;
+    text-align:center;
+}
+
+label {
   float: right;
+  text-align: right;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+input{
+  width: 100px;
+  text-align: left;
+  float: left;
 }
 
 .submitOrCancel {
   margin: 0 auto;
   width: 50%;
-  margin-top: 400px;
+  margin-top: 80px;
 }
 
 #submit, #cancel, #reset {
@@ -39,6 +54,13 @@ h4 {
   display: inline-block;
   margin-right: 25%;
   margin-left: 25%;
+}
+
+.five {
+  border: 5px solid black;
+  display: inline-block;
+  height: 275px;
+  float: right;
 }
 
 .earnings {
