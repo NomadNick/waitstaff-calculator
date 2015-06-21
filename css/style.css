@@ -1,23 +1,25 @@
 body {
-  background-color: #FF636E;
+  background-color: #FFE183;
 }
 
 h1 {
   text-align: center;
-  background-color: #63FF89;
+  background-color: #1AFF96;
   border: 5px solid black;
+  font-family: 'Oswald', sans-serif;
 }
 
 .heading {
   border-bottom: 5px solid black;
   height: 50px;
-  background-color: #63FF89;
+  background-color: #1AFF96;
 }
 
 h4 {
   font-size: 1.6em;
   text-align: center;
   padding-top: 5px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .six {
@@ -37,6 +39,7 @@ h4 {
   border-top-right-radius: 10px;
   padding: 0px;
   text-align:center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 label {
@@ -79,6 +82,7 @@ input {
   height: 275px;
   float: right;
   background-color: #FFF;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .earnings {
