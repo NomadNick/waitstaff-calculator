@@ -1,10 +1,17 @@
+body {
+  background-color: #FF636E;
+}
+
 h1 {
   text-align: center;
+  background-color: #63FF89;
+  border: 5px solid black;
 }
 
 .heading {
   border-bottom: 5px solid black;
   height: 50px;
+  background-color: #63FF89;
 }
 
 h4 {
@@ -16,6 +23,7 @@ h4 {
 .six {
   border: 5px solid black;
   height: 600px;
+  background-color: #FFF;
 }
 
 #form {
@@ -52,34 +60,52 @@ input {
   font-size: 1em;
 }
 
-.submitOrCancel {
-  margin: 0 auto;
-  width: 50%;
-  margin-top: 90px;
+#submit, #cancel {
+  margin-top: 50px;
+  margin-right: 170px;
+  margin-left: 141px;
 }
 
-#submit, #cancel, #reset {
-  background-color: lightgreen;
+#submit, #cancel {
+  background-color: #33B252;
+  color: #fff;
   width: 120px;
-  text-align: center;
-  border: 2px solid gray;
-  display: inline-block;
-  margin-right: 25%;
-  margin-left: 25%;
+  border: 2px solid black;
 }
 
-.five {
+.earnings, .charges {
   border: 5px solid black;
   display: inline-block;
   height: 275px;
   float: right;
+  background-color: #FFF;
 }
 
 .earnings {
   margin-top: 50px;
 }
 
-.one {
+.customerCharges {
+  margin-top: 30px;
+}
+
+.earningsCounts {
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+.reset {
   float: right;
   margin-top: 40px;
+}
+
+#reset {
+  background-color: #33B252;
+  color: #fff;
+  width: 120px;
+  text-align: center;
+  border: 2px solid black;
 }

@@ -63,40 +63,42 @@
 
                 <span class="error" ng-if="myForm.$submitted && myForm.meal_price.$error.required">Please Only Enter Numbers</span>
 
-          <div class="submit-container">
-            <input type="submit" value="Submit"/>
-            <button id="cancel" ng-click="cancel()">
-            Cancel
-          </button>
-          </div>
+            <input type="submit" value="Submit" id="submit"/>
+
+            <input type="submit" value="Cancel" id="cancel" ng-click="cancel()">
+
 
           </form>
         </div>
 
       </div>
 
-      <div class="five columns charges">
+      <div class="six columns charges">
         <div class="heading">
           <h4>Customer Charges</h4>
         </div>
+        <div class="customerCharges">
         <p>Subtotal: {{ subtotal | currency }}</p>
         <p>Tip: {{ tip | currency }}</p>
         <p>Total: {{ total | currency }}</p>
+        </div>
       </div>
 
-      <div class="five columns earnings">
+      <div class="six columns earnings">
         <div class="heading">
           <h4>My Earnings Info</h4>
         </div>
+        <div class="earningsCounts">
         <p>Tip Total: {{ tip_total | currency }}</p>
         <p>Meal Count: {{ meal_count | number }}</p>
         <p>Avg. Tip Per Meal: {{ average_tip | currency }}</p>
+        </div>
       </div>
 
     </div>
 
     <div class="row">
-      <div class="one column">
+      <div class="two columns reset">
         <button id="reset" ng-click="reset()">
           Reset
         </button>
