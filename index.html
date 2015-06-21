@@ -52,15 +52,12 @@
 
                 <label for="meal_price">Base Meal Price: $</label>
                 <input type="number" name="meal_price" ng-model="meal_price"  required ng-pattern="/^\d+$/"/>
-<!--                 <span class="error" ng-if="myForm.$submitted && myForm.meal_price.$error.required">Numbers Only</span> -->
 
                 <label for="tax_rate">Tax Rate: %</label>
                 <input type="number" name="tax_rate" ng-model="tax_rate" required ng-pattern="/^\d+$/"/>
-<!--                 <span class="error" ng-if="myForm.$submitted && myForm.tax_rate.$error.required">Numbers Only</span> -->
 
                 <label for="tip_percentage">Tip Percentage: %</label>
                 <input type="number" name="tip_percentage" ng-model="tip_percentage" required ng-pattern="/^\d+$/"/>
-<!--                 <span class="error" ng-if="myForm.$submitted && myForm.tip_percentage.$error.required">Numbers Only</span> -->
 
             </fieldset>
 
@@ -75,15 +72,6 @@
 
           </form>
         </div>
-
-<!--         <div class="submitOrCancel">
-          <button id="submit" ng-click="submit()">
-            Submit
-          </button>
-          <button id="cancel" ng-click="cancel()">
-            Cancel
-          </button>
-        </div> -->
 
       </div>
 
@@ -100,16 +88,16 @@
         <div class="heading">
           <h4>My Earnings Info</h4>
         </div>
-        <p>Tip Total: {{ tip_total }}</p>
-        <p>Meal Count: {{ meal_count }}</p>
-        <p>Avg. Tip Per Meal: {{ average_tip }}</p>
+        <p>Tip Total: {{ tip_total | currency }}</p>
+        <p>Meal Count: {{ meal_count | number }}</p>
+        <p>Avg. Tip Per Meal: {{ average_tip | currency }}</p>
       </div>
 
     </div>
 
     <div class="row">
       <div class="one column">
-        <button id="reset">
+        <button id="reset" ng-click="reset()">
           Reset
         </button>
       </div>
